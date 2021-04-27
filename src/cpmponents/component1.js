@@ -1,22 +1,22 @@
 import './component2.css'
 
-function Films(props) {
+function Films({oneFilm}) {
+    const {title, image, description} = oneFilm
     let cls;
-    if (props.title === 'Shameless') cls = 'shame';
-    if (props.title === 'Chilling Adventures of Sabrina') cls = 'sabrina';
-    if (props.title === 'The 100') cls = 'the100'
+    if (title === 'Shameless') cls = 'shame';
+    if (title === 'Chilling Adventures of Sabrina') cls = 'sabrina';
+    if (title === 'The 100') cls = 'the100'
     return <div className={cls}>
         <h1>
-            {props.title}
+            {title}
         </h1>
         <div>
             <div>
-            <img src={props.image} alt=""/>
-        </div>
+                <img src={image} alt=""/>
+            </div>
             <p>
-                {props.description}
+                {description}
             </p>
-
 
         </div>
     </div>
