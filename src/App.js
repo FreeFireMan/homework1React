@@ -30,7 +30,7 @@ const films = [
         image: 'https://static.wikia.nocookie.net/thehundred/images/0/0d/The-100-poster.png/revision/latest?cb=20140410034446'
     }
 
-]
+];
 
 const App = () => {
     return (
